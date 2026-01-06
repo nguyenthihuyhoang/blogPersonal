@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Personal" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/title</item>
+        <item name="android:statusBarColor">@color/purple_500</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+        <!-- Title color -->
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+</resources>

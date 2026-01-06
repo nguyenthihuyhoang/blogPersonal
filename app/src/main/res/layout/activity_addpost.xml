@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddpostActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ToolbarTheme"
+        app:title=""
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="@drawable/baseline_back_24"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical"
+        tools:context=".AddpostActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:background="@drawable/levender_boders">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Post"
+                android:textSize="40sp"
+                android:textAlignment="center"
+                android:textColor="@color/background"/>
+
+            <ImageView
+                android:id="@+id/addImage"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/baseline_add_a_photo_24" />
+            
+            <EditText
+                android:id="@+id/addTopic"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/levender_boders"
+                android:layout_marginTop="20dp"
+                android:padding="5dp"
+                android:hint="Enter topic name"
+                android:gravity="start|center_vertical"
+                android:textColorHint="#BAB0B0"/>
+
+            <EditText
+                android:id="@+id/addDesc"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/levender_boders"
+                android:layout_marginTop="20dp"
+                android:padding="5dp"
+                android:hint="Enter descripion"
+                android:maxLines="4"
+                android:gravity="start|center_vertical"
+                android:textColorHint="#BAB0B0"
+                android:scrollbars="vertical"/>
+
+            <Button
+                android:id="@+id/buttonSaveAdd"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/button_select"
+                android:text="Save"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>
+</RelativeLayout>

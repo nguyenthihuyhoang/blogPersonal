@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/adCard"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:id="@+id/form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/adImage"
+            android:layout_width="180dp"
+            android:layout_height="154dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/adTopic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Topic"
+            android:layout_toEndOf="@+id/adImage"
+            android:layout_marginStart="15dp"
+            android:paddingTop="10dp"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/adDesc"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@id/adTopic"
+            android:layout_toEndOf="@id/adImage"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:maxLines="2"
+            android:text="Desciption"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/adcurrentDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adusername"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:text="currentDate"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/by"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="By: "
+            android:layout_marginStart="5dp"
+            android:layout_below="@id/adDesc"
+            android:layout_toEndOf="@id/adImage"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/adusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="username"
+            android:textStyle="bold"
+            android:layout_below="@id/adDesc"
+            android:layout_toEndOf="@+id/by"
+            android:layout_marginTop="10dp"/>
+
+        <ImageButton
+            android:id="@+id/statusBtn"
+            android:layout_width="80dp"
+            android:layout_height="49dp"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_toEndOf="@id/adImage"
+            android:layout_below="@+id/adusername"
+            android:contentDescription="approve"
+            android:src="@drawable/baseline_done_24" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
